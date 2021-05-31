@@ -1,5 +1,5 @@
 <div class="text-center">
-  <h1>Sign up</h1>
+  <h1>edit</h1>
 </div>
 
 <div class="row">
@@ -9,22 +9,17 @@
      <%= render 'layouts/error_messages', model: f.object %>
       
       <div class="form-group">
-        <%= f.label :name, 'Name' %>
+        <%= f.label :name, 'NewName' %>
         <%= f.text_field :name, class: 'form-control' %>
-      </div>
-      
-      <div class="form-group">
-        <%= f.label :old, 'Old' %>
-        <%= f.text_field :old, class: 'form-control' %>
       </div>
 
       <div class="form-group">
-        <%= f.label :email, 'Email' %>
+        <%= f.label :email, 'NewEmail' %>
         <%= f.email_field :email, class: 'form-control' %>
       </div>
 
       <div class="form-group">
-        <%= f.label :password, 'Password' %>
+        <%= f.label :password, 'NewPassword' %>
         <%= f.password_field :password, class: 'form-control' %>
       </div>
 
@@ -33,7 +28,7 @@
         <%= f.password_field :password_confirmation, class: 'form-control' %>
       </div>
 
-      <%= f.submit 'Sign up', class: 'btn btn-primary btn-block' %>
+      <%= f.submit 'Update', class: 'btn btn-primary btn-block' %>
     <% end %>
   </div>
 </div>
